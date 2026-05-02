@@ -683,3 +683,7 @@ textarea {
     font-size: 0.85rem;
   }
 }  
+
+.panel .panel-head h3 {
+  color: #d4a03c;
+}
