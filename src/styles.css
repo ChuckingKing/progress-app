@@ -687,3 +687,32 @@ textarea {
 .panel .panel-head h3 {
   color: #d4a03c;
 }
+
+/* ── Force title colors ── */
+h1, h2, h3, h4 {
+  color: #d4a03c;
+}
+
+/* ── Remove green checkbox and input glow ── */
+input[type="checkbox"] {
+  accent-color: #d4a03c;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #d4a03c;
+  outline-offset: 0;
+  border-color: #d4a03c;
+  box-shadow: 0 0 0 3px rgba(212, 160, 60, 0.2);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #d4a03c;
+  border-color: #d4a03c;
+  box-shadow: 0 0 0 3px rgba(212, 160, 60, 0.2);
+}
+
+.check-card.completed {
+  background: rgba(212, 160, 60, 0.2);
+}
