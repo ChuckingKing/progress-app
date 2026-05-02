@@ -1,19 +1,18 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #1d2a22;
+  color: #f0ede8;
   background:
-    radial-gradient(circle at top left, rgba(246, 209, 126, 0.55), transparent 28%),
-    radial-gradient(circle at top right, rgba(112, 159, 122, 0.35), transparent 26%),
-    linear-gradient(180deg, #f7f4ec 0%, #eef2e8 100%);
+    radial-gradient(circle at top left, rgba(212, 160, 60, 0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(212, 160, 60, 0.06), transparent 28%),
+    linear-gradient(180deg, #141414 0%, #1a1a1a 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -48,8 +47,8 @@ button {
   display: flex;
   flex-direction: column;
   padding: 28px;
-  background: rgba(255, 251, 244, 0.78);
-  border-right: 1px solid rgba(29, 42, 34, 0.08);
+  background: rgba(22, 22, 22, 0.92);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(14px);
 }
 
@@ -66,13 +65,13 @@ button {
   border: 0;
   border-radius: 14px;
   background: transparent;
-  color: #607062;
+  color: #8a8a8a;
 }
 
 .settings-link:hover,
 .settings-link.active {
-  background: rgba(225, 235, 222, 0.9);
-  color: #294032;
+  background: rgba(212, 160, 60, 0.2);
+  color: #d4a03c;
 }
 
 .settings-icon {
@@ -82,7 +81,7 @@ button {
   width: 28px;
   height: 28px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .brand h1,
@@ -98,7 +97,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.72rem;
-  color: #607062;
+  color: #8a8a8a;
 }
 
 .subtle,
@@ -108,7 +107,7 @@ button {
 .history-row p,
 .empty-state {
   margin: 0;
-  color: #617165;
+  color: #8a8a8a;
 }
 
 .nav {
@@ -135,22 +134,22 @@ button {
 .nav-button {
   padding: 14px 16px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.5);
-  color: #294032;
+  background: rgba(255, 255, 255, 0.05);
+  color: #d4a03c;
 }
 
 .nav-button.active,
 .nav-button:hover {
-  background: #294032;
-  color: #f7f4ec;
+  background: #d4a03c;
+  color: #141414;
 }
 
 .pulse-card,
 .metric-card,
 .panel,
 .toast {
-  border: 1px solid rgba(29, 42, 34, 0.08);
-  box-shadow: 0 12px 32px rgba(46, 62, 46, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
   background: rgba(255, 253, 248, 0.88);
   backdrop-filter: blur(14px);
 }
@@ -163,7 +162,7 @@ button {
 .pulse-card span,
 .metric-card span {
   display: block;
-  color: #617165;
+  color: #8a8a8a;
 }
 
 .pulse-card strong,
@@ -222,21 +221,21 @@ label textarea {
   display: inline-flex;
   padding: 4px;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(29, 42, 34, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .range-button {
   border: 0;
   background: transparent;
-  color: #607062;
+  color: #8a8a8a;
   padding: 8px 12px;
   border-radius: 12px;
 }
 
 .range-button.active {
-  background: #294032;
-  color: #f7f4ec;
+  background: #d4a03c;
+  color: #141414;
 }
 
 .metric-card {
@@ -291,21 +290,21 @@ label textarea {
 label {
   display: grid;
   gap: 8px;
-  color: #294032;
+  color: #d4a03c;
 }
 
 .field-hint {
   font-size: 0.82rem;
-  color: #7a857c;
+  color: #6a6a6a;
 }
 
 input,
 textarea {
-  border: 1px solid rgba(29, 42, 34, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(30, 30, 30, 0.95);
   padding: 12px 14px;
-  color: #1d2a22;
+  color: #f0ede8;
 }
 
 textarea {
@@ -325,7 +324,7 @@ textarea {
   align-items: center;
   padding: 14px 16px;
   border-radius: 18px;
-  background: rgba(244, 240, 231, 0.9);
+  background: rgba(32, 32, 32, 0.9);
   transition: 160ms ease;
 }
 
@@ -355,8 +354,8 @@ textarea {
 .goal-pill {
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(225, 235, 222, 0.95);
-  color: #294032;
+  background: rgba(212, 160, 60, 0.2);
+  color: #d4a03c;
   font-size: 0.92rem;
 }
 
@@ -369,8 +368,8 @@ textarea {
 }
 
 .status-pill.good {
-  background: rgba(217, 232, 215, 0.95);
-  color: #294032;
+  background: rgba(212, 160, 60, 0.2);
+  color: #d4a03c;
 }
 
 .primary-button,
@@ -385,8 +384,8 @@ textarea {
   justify-content: center;
   padding: 12px 16px;
   border-radius: 16px;
-  background: #e1ebde;
-  color: #294032;
+  background: #2a2a2a;
+  color: #d4a03c;
   cursor: pointer;
 }
 
@@ -400,18 +399,18 @@ textarea {
 }
 
 .primary-button {
-  background: #294032;
-  color: #f7f4ec;
+  background: #d4a03c;
+  color: #141414;
 }
 
 .secondary-button {
-  background: #e1ebde;
-  color: #294032;
+  background: #2a2a2a;
+  color: #d4a03c;
 }
 
 .ghost-button {
   background: transparent;
-  color: #7a3f2b;
+  color: #d4a03c;
 }
 
 .stack {
@@ -430,7 +429,7 @@ textarea {
 .history-row {
   padding: 16px;
   border-radius: 18px;
-  background: rgba(244, 240, 231, 0.86);
+  background: rgba(32, 32, 32, 0.9);
 }
 
 .exercise-header,
@@ -465,7 +464,7 @@ textarea {
   padding: 6px 10px;
   border-radius: 999px;
   background: #d9e8d7;
-  color: #294032;
+  color: #d4a03c;
   font-size: 0.9rem;
 }
 
@@ -488,7 +487,7 @@ textarea {
   width: 100%;
   min-height: 6%;
   border-radius: 14px 14px 4px 4px;
-  background: linear-gradient(180deg, #7ca370 0%, #294032 100%);
+  background: linear-gradient(180deg, #c49030 0%, #d4a03c 100%);
 }
 
 .line-chart-wrap {
@@ -499,7 +498,7 @@ textarea {
 .line-chart {
   width: 100%;
   height: 220px;
-  color: #294032;
+  color: #d4a03c;
   background: linear-gradient(180deg, rgba(124, 163, 112, 0.08), rgba(124, 163, 112, 0));
   border-radius: 20px;
 }
@@ -507,7 +506,7 @@ textarea {
 .line-chart-labels {
   display: flex;
   justify-content: space-between;
-  color: #617165;
+  color: #8a8a8a;
 }
 
 .sleep-chart {
@@ -518,7 +517,7 @@ textarea {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  color: #617165;
+  color: #8a8a8a;
   font-size: 0.92rem;
 }
 
@@ -531,11 +530,11 @@ textarea {
 }
 
 .legend-dot.wake {
-  background: #294032;
+  background: #d4a03c;
 }
 
 .legend-dot.bed {
-  background: #d99251;
+  background: #d4a03c;
 }
 
 .journal-head {
@@ -549,7 +548,7 @@ textarea {
 
   .sidebar {
     border-right: 0;
-    border-bottom: 1px solid rgba(29, 42, 34, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   .nav {
@@ -650,9 +649,9 @@ input[type="date"] {
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(255, 251, 244, 0.95);
+    background: rgba(18, 18, 18, 0.97);
     backdrop-filter: blur(14px);
-    border-top: 1px solid rgba(29, 42, 34, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
     padding: 8px 4px;
     padding-bottom: env(safe-area-inset-bottom, 8px); /* iPhone notch/home bar */
     gap: 2px;
@@ -668,7 +667,7 @@ input[type="date"] {
     border: 0;
     border-radius: 12px;
     background: transparent;
-    color: #607062;
+    color: #8a8a8a;
     font-size: 0.7rem;
     font-family: inherit;
     cursor: pointer;
@@ -676,8 +675,8 @@ input[type="date"] {
   }
 
   .bottom-nav-button.active {
-    color: #294032;
-    background: rgba(225, 235, 222, 0.9);
+    color: #d4a03c;
+    background: rgba(212, 160, 60, 0.2);
   }
 
   .bottom-nav-icon {
